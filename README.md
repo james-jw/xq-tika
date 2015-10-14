@@ -1,5 +1,5 @@
 # xq-tika
-XQuery 3.0 (java bindings) module for exposing <a href="https://tika.apache.org/download.html">Apache Tika</a> capabilities to xquery.
+XQuery 3.0 (java bindings) module for exposing <a href="https://tika.apache.org/download.html">Apache Tika</a> parsing capabilities to xquery. Tika currently supports over a 1000 file types including popular office formats.<br />
 
 <h3>Installation</h3>
 1) Download the latest verison of the <a href="https://tika.apache.org/download.html">Tika app .jar</a> file. 
@@ -13,7 +13,6 @@ Note in Windows: When launching BaseX as the GUI. Ensure to use the batch files 
 
 <h3>Functionality</h3>
 The xq-tika module currently exposes one method <code>parse</code> with one overload. Upon execution, the type of file is automatically detected with text contents returned utilizing the Tika libraries. <br />
-Tika currently supports over a 1000 file types including popular office formats.<br />
 
 <pre>parse($filePath as xs:string) as xs:string</pre>
 To support large files, and reduce memory footprint, a max string length can be specified. Each document will only be parsed up to the length specified.
