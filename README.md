@@ -1,5 +1,5 @@
 # xq-tika
-XQuery 3.0 (java bindings) module for exposing Apache Tika capabilities.
+XQuery 3.0 (java bindings) module for exposing <a href="https://tika.apache.org/download.html">Apache Tika</a> capabilities to xquery.
 
 <h3>Installation</h3>
 1) Download the latest verison of the <a href="https://tika.apache.org/download.html">Tika app .jar</a> file. 
