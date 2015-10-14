@@ -15,7 +15,7 @@ Note in Windows: When launching BaseX as the GUI. Ensure to use the batch files 
 The xq-tika module currently exposes one method <code>parse</code> with one overload. Upon execution, the type of file is automatically detected with text contents returned utilizing the Tika libraries. <br />
 
 <pre>parse($filePath as xs:string) as xs:string</pre>
-To support large files, and reduce memory footprint, a max string length can be specified. Each document will only be parsed up to the length specified.
+To support large files, and reduce memory footprint, a max string length can be specified resulting in the document only being parsed up to the length specified.
 <pre>parse($filePath as xs:string, $maxStringLength as xs:string) as xs:string</pre>
 
 <h3>Example</h3>
