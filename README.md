@@ -12,8 +12,11 @@ Note in Windows: When launching BaseX as the GUI. Ensure to use the batch files 
 2) Clone this repository to your local machine and import the xq-tika.xqm module into your project.
 
 <h3>Functionality</h3>
-The xq-tika module currently exposes one method <pre>parseToString($file-path as xs:string) as xs:string</pre>
-Upon execution, the type of file is automatically detected and text contents returned utilizing the Tika libraries. <p />
+The xq-tika module currently exposes one method with one overload
+<pre>parse($filePath as xs:string) as xs:string</pre>
+To support large files, and reduce memory footprint, a max string length can be specified. Each document will only be parsed up to the length specified.
+<pre>parse($filePath as xs:string, $maxStringLength as xs:string) as xs:string</pre>
+Upon execution, the type of file is automatically detected with text contents returned utilizing the Tika libraries. <p />
 
 Currently Tika supports over a 1000 file types including office formats. <br />
 
@@ -21,7 +24,7 @@ Currently Tika supports over a 1000 file types including office formats. <br />
 
 <pre>
 import module namespace tika = "http://xq-tika";
-tika:parseToString('c:\my-word-document.doc')
+tika:parse('c:\my-word-document.doc')
 </pre>
 
 Happy Parsing!
