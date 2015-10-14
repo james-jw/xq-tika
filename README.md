@@ -12,7 +12,7 @@ Note in Windows: When launching BaseX as the GUI. Ensure to use the batch files 
 2) Clone this repository to your local machine and import the xq-tika.xqm module into your project.
 
 <h3>Functionality</h3>
-The xq-tika module currently exposes one method <code>parse-file($path as xs:string) as xs:string</code>. The method simply takes a file path. Upon execution, the type of file is automatically detected and text contents returned utilizing the Tika libraries. <p />
+The xq-tika module currently exposes one method <code>parseToString($path as xs:string) as xs:string</code>. The method simply takes a file path. Upon execution, the type of file is automatically detected and text contents returned utilizing the Tika libraries. <p />
 
 Currently Tika supports over a 1000 file types including office formats. <br />
 
