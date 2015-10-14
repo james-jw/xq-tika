@@ -20,7 +20,7 @@ Currently Tika supports over a 1000 file types including office formats. <br />
 
 <pre>
 import module namespace tika = "http://xq-tika";
-tika:parse-file('c:\my-word-document.doc')
+tika:parseToString('c:\my-word-document.doc')
 </pre>
 
 Happy Parsing!
