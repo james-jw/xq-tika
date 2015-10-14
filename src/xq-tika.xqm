@@ -1,11 +1,17 @@
+(: Java Bindings for Apache Tika  
+ @author James Wright
+:)
+
 module namespace local = 'http://xq-tika';
 declare namespace tika = "java:org.apache.tika.Tika";
 declare namespace f = "java:java.io.File";
 
+(: Parses the file at the specified path with no limit on string size. :)
 declare function local:parse($path as xs:string) as xs:string {
   local:parse($path, -1)
 };
 
+(: Parses the file at the specified path returning only as many characters as specified in maxStringLength. :)
 declare function local:parse($path as xs:string, $maxStringLength as xs:integer) as xs:string {
   let $file := f:new($path)
   let $tika := tika:new()
