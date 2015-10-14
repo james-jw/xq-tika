@@ -4,8 +4,7 @@ XQuery 3.0 (java bindings) module for exposing <a href="https://tika.apache.org/
 <h3>Installation</h3>
 1) Download the latest verison of the <a href="https://tika.apache.org/download.html">Tika app .jar</a> file. 
 
-2) Add the file to your class path: <br />
-BaseX: If using BaseX simply add the file to the BaseX\lib folder. 
+2) Add the file to your class path or if using BaseX simply add the file to the BaseX\lib folder. 
 <p />
 Note in Windows: When launching BaseX as the GUI. Ensure to use the batch files located in BaseX\Bin folder, as opposed to the gui executable. The batch files ensure all jar files in the lib folder are added to the class path. 
 <p />
