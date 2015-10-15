@@ -20,3 +20,14 @@ declare function local:parse($path as xs:string, $maxStringLength as xs:integer)
     tika:parseToString($tika, $file)
   )
 };
+
+(: Parses a document, splitting the reuslts into lines. :)
+declare function local:parse-lines($path as xs:string) as xs:string* {
+  local:parse-lines($path, -1)
+};
+
+(: Parses a document, limiting result length and spliting the results into
+ : lines :)
+declare function local:parse-lines($path as xs:string, $maxStringLength as xs:integer) as xs:string* {
+  local:parse($path, $maxStringLength) => tokenize('\n')
+};
