@@ -1,10 +1,6 @@
-
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- xqpm dependency file -->
 <config>
-  <params>
-    <param name="lib">{{base}}/lib</param>
-  </params>
   <dependencies>
     <directory path="{{lib}}">
       <dependency name="apache-tika" path="http://ftp.wayne.edu/apache/tika/tika-app-1.10.jar" />
