@@ -3,7 +3,7 @@
 <config>
   <dependencies>
     <directory path="{{lib}}">
-      <dependency name="apache-tika" path="http://ftp.wayne.edu/apache/tika/tika-app-1.10.jar" />
+      <dependency name="apache-tika" type="binary" path="http://ftp.wayne.edu/apache/tika/tika-app-1.10.jar" />
     </directory>
   </dependencies>
 </config>
