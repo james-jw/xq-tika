@@ -4,7 +4,7 @@
   <dependencies>
     <directory path="{{lib}}">
       <dependency name="apache-tika" type="binary" path="http://ftp.wayne.edu/apache/tika/tika-app-1.10.jar" />
-      <dependency name="tika-install" type="command" path="basex">
+      <dependency name="tika-install" type="command" path="{{base}}/bin/basex">
         <argument>-c"repo install '{{repo}}/xq-tika/src/xq-tika.xqm'"</argument>
       </dependency>
     </directory>
